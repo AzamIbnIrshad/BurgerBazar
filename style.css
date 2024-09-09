@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=SUSE:wght@100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dosis:wght@200..800&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("BurgerBgCover.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px); 
+  z-index: -1;
+
+}
+
+
+
+
+#header {
+  background: rgba(213, 167, 27, 0.323);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  gap: 40px;
+}
+
+nav {
+  padding: 1.25rem;
+}
+
+header nav button {
+  cursor: pointer;
+  transform: scale(1);
+  height: 3.125rem;
+  width: 3.125rem;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+header nav button:hover:not(#header nav:first-child button) {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  font-size: xx-large;
+}
+#header::before {
+  background-color: rgba(255, 255, 255, 0.438);
+  background-blend-mode: lighten;
+  filter: blur(10px);
+}
+
+
+
+#header nav:first-child button {
+  font-size: 2rem;
+  position: absolute;
+  left: 10px;
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-buttons {
+  font-size: 1.5625rem;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+#frontImg {
+  
+  background-image: url("BurgerFront.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+  height: 500px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+
+}
+
+#deal{
+  font-size:10rem;
+  color:white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  text-shadow:2px 2px 2px black,
+              2px 3px 2px black;
+
+}
+
+
+#frontImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay for better contrast */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#frontImg img {
+  position: relative;
+  z-index: 0; /* Ensures image appears above the overlay */
+}
+
+#menu-block{
+  display: none;
+}
+#menu-heading{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  border: 2px solid orange;
+  background-color: rgba(213, 167, 27, 0.323);
+}
+h2{
+  margin-left: 20px;
+  font-size: 40px;
+  color: rgba(255, 68, 0, 0.721);
+ text-shadow: 1px 1px 1px  white,
+              -1px -1px 2px black;
+
+}
+
+#one{
+  background: url('cheese-burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#two{
+  background: url('beef-brger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#three{
+  background: url('Vegan-special.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#four{
+  background: url('burgerWithFries.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#five{
+  background: url('Shawarma-burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#six{
+  background: url('Booring burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#seven{
+  background: url('dumb-burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#eight{
+  background: url('cheese-burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#nine{
+  background: url('beef-brger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+#menu{
+  
+  display:grid;
+  gap: 1.5625rem;
+  padding: 5.9375rem;
+  grid-template-columns: repeat(3,minmax(250px,1fr) );
+
+
+}
+
+.elements > .text{
+  display: none;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-size: xx-large;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bolder;
+  color: whitesmoke;
+  transition: trasnform .5s;
+
+
+
+}
+.elements{
+ height: 200px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  transform:scale(1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.elements:hover{
+
+  transform:scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
+.elements:hover > .text{
+  display: block;
+  transform: translateY(60px);
+  transition: 0.3s ease-in-out ;
+}
+
+
+
+#home-para{
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 2px 2px 1px black,
+  2px 3px 1px black;           
+  
+
+
+  color: rgb(179, 88, 18);
+ 
+  
+
+}
+
+.about{
+  display: none;
+  background: url("Farman-nama.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  
+  
+}
+
+#about-div{
+  width: 400px;
+  height: 600px;
+  display:flex;
+  justify-content:flex-end;
+
+  align-items:center;
+  
+}
+
+#burger-text{
+  font-size: 2.1875rem;
+  font-family: "Playfair Display", serif;
+
+  font-style: normal;
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  #frontImg{
+    height: 400px;
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
+
+  #frontImg{
+    height: 400px;
+    width: 100%;
+  }
+
+  #header nav:first-child button {
+    font-size: 1.7rem;
+    position: absolute;
+    left: 10px;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  nav {
+    padding: 0;
+  }
+  #frontImg{
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  #header {
+    display: grid;
+    margin-left: 100%;
+    margin-right: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+
+  #burger-icon {
+    display: block;
+  }
+
+
+  .fa-bars {
+    position: sticky;
+    z-index: 2;
+    top: 10px;
+    color: white;
+    left: 100%;
+    font-size: large;
+  }
+}
+
+
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(213, 166, 27);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color: white;
+}
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}

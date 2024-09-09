@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header id="header">
+
+      <nav><button class="nav-buttons hvr-bounce-to-right" data-tilt>BurgerBazar</button></nav>
+      <nav><button class="nav-buttons hvr-bounce-to-right" data-target="home">Home</button></nav>
+      <nav><button class="nav-buttons hvr-bounce-to-right" data-target="menu">Menu</button></nav>
+      <nav><button class="nav-buttons hvr-bounce-to-right" data-target="about">About</button></nav>
+      <nav><button class="nav-buttons hvr-bounce-to-right" data-target="feedback">Feedback</button></nav>
+
+    </header>
+
+    <i id="burger-icon"  class="fa-solid fa-bars" style="display: none;"></i>
+
+    <div id="contents">
+    <div id="frontImg"><div id="deal">Exclusive Deal</div></div>
+
+
+      <div id="menu-block" class="menu navElements" data-target="menu">
+        <div id="menu-heading"><h2>Menu</h2></div>
+           <div id="menu">
+              <div class="elements" id="one"><p class="text">Cheese Burger</p></div>
+              <div class="elements" id="two"><p class="text">Another burger</p></div>
+              <div class="elements" id="three"><p class="text">Vegan special</p></div>
+              <div class="elements" id="four"><p class="text">Burer with fries</p></div>
+              <div class="elements" id="five"><p class="text">Shawarma burger</p></div>
+              <div class="elements" id="six"><p class="text">Booring burger</p></div>
+              <div class="elements" id="seven"><p class="text">Dumb burger</p></div>
+              <div class="elements" id="eight"><p class="text">repeat</p></div>
+              <div class="elements" id="nine"><p class="text">repeat</p></div>
+         </div>
+     </div>
+
+     <div id="home" class="home navElements" data-target="home">
+      <h1 id="home-para">Welcome! CLick on menu to see what we offer.</h1>
+     </div>
+
+     <div id="about" class=" about navElements" data-target="about"><div id="about-div"><p id="burger-text">We deliver the best burgers in the town. Our brand compromise not only on quality and (believe it or not) on quantity. We offer you a very good BurgerJourney.Burger OUT!</p></div></div>
+     <div id="feedback" class=" feedback navElements" data-target="feedback"></div>
+
+</div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+
+      //It also supports NodeList
+     
+    </script>
+  </body>
+</html>
